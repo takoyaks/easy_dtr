@@ -110,9 +110,7 @@ function open_dtr(monthWord, yearLastTwoDigits) {
   const officerName = encodeURIComponent(document.getElementById("provincialOfficer")?.value || "");
 
 
-  if (confirm("Do you want to continue and open the DTR builder in a new window?")) {
-    window.open(`dtr_builder.html?data=${smallData}&name=${name}&officer=${officerName}&month=${monthWord}&year=${yearLastTwoDigits}`);
-  }
+  window.open(`dtr_builder.html?data=${smallData}&name=${name}&officer=${officerName}&month=${monthWord}&year=${yearLastTwoDigits}`);
 }
 
 
